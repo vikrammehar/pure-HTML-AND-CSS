@@ -1,0 +1,187 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Onest:wght@500&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@1,200&display=swap');
+
+*{margin: 0;
+padding: 0;
+}
+nav,ul{display: flex;
+justify-content: center;
+list-style: none;
+width: 100vw;
+height: 30px;
+}
+ul li a{text-decoration: none;
+margin: 0 100px;}
+nav{background: blueviolet;
+color: rgb(19, 236, 73);
+margin-bottom: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.red{width: 100vw;
+    margin: 5px;
+height: 40vh;
+background-image: url(https://source.unsplash.com/1000x300/?girl,hot);
+background-repeat: no-repeat;
+background-size: cover;
+animation: backgroundSlide 10s infinite; 
+cursor: pointer;
+}
+  header img{width: 50px;
+height: 80px;
+position: absolute;
+left: 45vw;
+border-radius: 50px;
+animation: rotate 2s ease-in-out infinite;}
+  header  h2{position: absolute;
+top: 108px;
+left: 44vw;}
+  header h3{position: absolute;
+top: 135px;
+left: 43vw;}
+p{position: absolute;
+top: 180px;
+left: 25vw;
+}
+.one{position: absolute;
+    width: 25px;
+    height: 50px;
+top: 100px;
+left: 10px;}
+.two{position: absolute;
+    top: 100px;
+left: 95vw;
+width: 25px;
+height: 50px;}
+header{margin:0 0 10px 0 ;}
+
+
+@keyframes rotate {from{transform: rotateX(0deg);}
+to{transform: rotateY(360deg);}}
+@keyframes slide {
+    from{transform: translateX(0vw);}
+    to{transform: translateX(-200vw);}
+}
+    
+
+@media (max-width:450px) {
+    p{display: none;}
+    header img{left: 38vw;}
+    header h2{left: 35vw;
+    top: 135px;}
+     header h3{left: 26vw;
+    top: 160px;}
+    .two{left: 90vw;}
+    nav,ul{height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul li a{margin: 0;}
+
+}
+@keyframes backgroundSlide {
+    0% {
+      background-image: url('https://source.unsplash.com/1000x300/?girl,style');
+    }
+    33% {
+      background-image: url('https://source.unsplash.com/1000x300/?mens,fashion');
+    }
+    66% {
+      background-image: url('https://source.unsplash.com/1000x300/?laptop,it');
+    }
+    100% {
+      background-image: url('https://source.unsplash.com/1000x300/?girl,style'); /* Loop back to the first image */
+    }
+  }
+  main h1{text-align: center;
+    font-family: 'Croissant One', cursive;}
+    .pink h2 a{text-decoration: none;
+    }
+  main{width:100vw;
+  height: 120vh;
+margin: 20px 45px ;
+padding: 0;}
+  .pink{width: 200px;
+  height: 300px;
+cursor: pointer;
+font-family: 'Karla', sans-serif;
+margin: 10px 40px;}
+  .flex1{display: grid;
+    grid-template-columns:1fr 1fr 1fr  ;
+    justify-content: center;
+    align-content: center;
+    transition: width 1s ease-in,height 1s ease-in;
+    margin: 25px 0;
+  }
+  .img2:hover{width: 350px;
+  height: 250px;}
+  .flex2{display: grid;
+    grid-template-columns:1fr 1fr 1fr  ;
+    justify-content: center;
+    align-content: center;
+    transition: width 1s ease-in,height 1s ease-in;
+    margin: 25px 0;
+  }
+  @media screen and (max-width:800px) {
+    .flex1,.flex2{grid-template-columns: auto;
+    row-gap: 10x;
+    justify-content: center;
+    align-content: center;
+    transition: none;
+    margin:0;
+  }
+  main{margin: 30px 0;
+  height: 390vh;}
+  .pink{margin:0 0 0 30px;}
+  .img2:hover{width: 170px;
+  height: 200px;}
+  }
+
+
+
+  .redy{width: 80vw;
+    height: 80vh;
+    background-image: url(1_newtallhero._SY1500_QL85_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    color: white;
+    margin: 30vh 10vw ;
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    font-family: 'Karla', sans-serif;
+    gap: 4px 5px;}
+    .on,.tw,.three,.four,.five,.six{color: rgba(22, 88, 99, 0.808);
+      background: #b4368a98;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    .redy h1{margin: 30px 0;}
+    @media (max-width:600px) {.redy{grid-template-columns: 200px;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 ;
+    }
+    .redy h1{text-align: left;
+    padding-left: 5px;}
+        
+    }
+    footer h2{text-align: center;
+      font-family: 'Croissant One', cursive;
+    margin-top:300px ;}
+
+  
+  
+
+    
